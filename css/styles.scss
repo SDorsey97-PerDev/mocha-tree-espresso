@@ -1,0 +1,472 @@
+// Mocha Tree Espresso — Custom Styles
+
+// Colors
+$color-espresso: #2C1810;
+$color-cream: #F5F0E8;
+$color-caramel: #C8862A;
+$color-warm-white: #FDFAF5;
+$color-green: #2D4A2D;
+$color-text: #333333;
+
+// Fonts
+$font-heading: "Playfair Display", serif;
+$font-body: "Lato", sans-serif;
+
+// Base
+body {
+    font-family: $font-body;
+    background-color: $color-warm-white;
+    color: $color-text;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-heading;
+}
+
+// Navbar
+#navbar {
+    background-color: $color-espresso;
+    padding: 16px 0;
+
+    .navbar-brand {
+        font-family: $font-heading;
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: $color-caramel !important;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-link {
+        color: $color-cream !important;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+
+        &:hover {
+            color: $color-caramel !important;
+        }
+    }
+}
+
+// Hero
+#hero {
+    background-color: $color-espresso;
+    color: white;
+    padding: 100px 0;
+
+    .hero-eyebrow {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $color-caramel;
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 24px;
+        color: white;
+    }
+
+    .hero-sub {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: $color-cream;
+        margin-bottom: 40px;
+        max-width: 600px;
+    }
+}
+
+// Buttons
+.btn-caramel {
+    background-color: $color-caramel;
+    color: $color-espresso;
+    font-family: $font-heading;
+    font-weight: 700;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: lighten($color-caramel, 10%);
+        color: $color-espresso;
+    }
+}
+
+// Menu Modal
+#menu-modal-header {
+    background-color: $color-espresso;
+    color: white;
+
+    .modal-title {
+        font-family: $font-heading;
+        color: $color-caramel;
+    }
+}
+
+.menu-category {
+    font-family: $font-heading;
+    font-weight: 700;
+    color: $color-espresso;
+    border-bottom: 2px solid $color-caramel;
+    padding-bottom: 6px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.btn-order {
+    padding: 12px 0;
+    font-weight: 600;
+}
+
+// About
+#about {
+    background-color: $color-cream;
+    padding: 80px 0;
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: $color-espresso;
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: #6b7280;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+}
+
+.section-eyebrow {
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-caramel;
+    margin-bottom: 12px;
+}
+
+.feature-number {
+    font-family: $font-heading;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: $color-espresso;
+}
+
+.feature-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.about-card {
+    background: white;
+    border-left: 4px solid $color-caramel;
+    border-radius: 4px;
+    padding: 36px;
+
+    h5 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-espresso;
+        margin-bottom: 20px;
+    }
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e8f0;
+        color: #6b7280;
+        font-size: 0.95rem;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: "→";
+            color: $color-caramel;
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+// Menu Preview
+#menu {
+    background-color: $color-warm-white;
+    padding: 80px 0;
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: $color-espresso;
+        margin-bottom: 16px;
+    }
+
+    h4 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-espresso;
+    }
+}
+
+.section-sub {
+    font-size: 1.05rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.drink-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 32px 24px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    h5 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-espresso;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: #6b7280;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+.drink-card-featured {
+    border: 3px solid $color-caramel;
+}
+
+.drink-icon {
+    font-size: 2rem;
+    color: $color-caramel;
+    margin-bottom: 16px;
+}
+
+.loyalty-card {
+    background: $color-espresso;
+    color: white;
+    border-radius: 8px;
+    padding: 40px;
+
+    i {
+        color: $color-caramel;
+    }
+
+    h5 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-caramel;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: $color-cream;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+// Contact
+#contact {
+    background-color: $color-cream;
+    padding: 80px 0;
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: $color-espresso;
+        margin-bottom: 16px;
+    }
+
+    h4 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-espresso;
+        margin-bottom: 12px;
+    }
+}
+
+.contact-card {
+    background: white;
+    border-radius: 8px;
+    padding: 32px 24px;
+    height: 100%;
+    border-top: 4px solid $color-caramel;
+
+    i {
+        color: $color-caramel;
+    }
+
+    h5 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $color-espresso;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: #6b7280;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $color-caramel;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            color: $color-espresso;
+        }
+    }
+}
+
+.demo-form-card {
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+
+    .form-label {
+        font-family: $font-heading;
+        font-weight: 600;
+        color: $color-espresso;
+        font-size: 0.9rem;
+    }
+
+    .form-control:focus {
+        border-color: $color-caramel;
+        box-shadow: 0 0 0 3px rgba(200, 134, 42, 0.15);
+    }
+}
+
+.demo-label {
+    display: inline-block;
+    background: $color-caramel;
+    color: $color-espresso;
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+// Footer
+#footer {
+    background-color: $color-espresso;
+    color: $color-cream;
+    padding: 60px 0 0 0;
+
+    h5 {
+        font-family: $font-heading;
+        font-weight: 800;
+        color: $color-caramel;
+        margin-bottom: 16px;
+    }
+
+    h6 {
+        font-family: $font-heading;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
+
+    p {
+        color: $color-cream;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+}
+
+.footer-legal {
+    color: #6b7280 !important;
+    font-size: 0.8rem !important;
+    margin-top: 8px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 5px 0;
+        font-size: 0.9rem;
+        color: $color-cream;
+    }
+
+    a {
+        color: $color-cream;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-caramel;
+        }
+    }
+}
+
+.footer-social {
+    a {
+        color: $color-cream;
+        margin-right: 12px;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-caramel;
+        }
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    padding: 20px 0;
+
+    p {
+        font-size: 0.8rem;
+        color: #6b7280;
+        margin: 0;
+    }
+}
+
+.footer-disclaimer {
+    margin-top: 4px;
+    font-style: italic;
+}

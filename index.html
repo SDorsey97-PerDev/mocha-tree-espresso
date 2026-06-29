@@ -1,0 +1,575 @@
+<!doctype html>
+<!-- Workshop 4 — Mocha Tree Espresso Landing Page | Spencer Dorsey -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/solid.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lato:wght@400;500;700&display=swap"
+    />
+
+    <!-- Custom SCSS -->
+    <link rel="stylesheet" href="css/styles.scss" />
+
+    <title>
+      The Mocha Tree Espresso | Yakima's Longest Running Espresso Bar
+    </title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">The Mocha Tree Espresso</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mochaNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mochaNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#menuModal"
+                role="button"
+              >
+                <i class="fa-solid fa-mug-hot"></i> Order Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <p class="hero-eyebrow">Yakima's Longest Running Espresso Bar</p>
+            <h1>Twenty Seven Years of Craft.<br />One Cup at a Time.</h1>
+            <p class="hero-sub">
+              From our drive-thru window to your hands — handcrafted espresso
+              drinks, breakfast bites, and the kind of service that remembers
+              your name.
+            </p>
+            <a href="#menu" class="btn btn-caramel me-3">See Our Menu</a>
+            <a href="#contact" class="btn btn-outline-light">Find Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menuModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" id="menu-modal-header">
+            <h3 class="modal-title">Our Menu</h3>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <!-- Drinks -->
+              <h5 class="menu-category">Espresso Drinks</h5>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Caramallo</td>
+                    <td>Rich espresso drink with a sweet caramel twist</td>
+                  </tr>
+                  <tr>
+                    <td>Twisted Sister</td>
+                    <td>A house favorite — ask your barista for details</td>
+                  </tr>
+                  <tr>
+                    <td>Tutti Fruity</td>
+                    <td>A fruity espresso blend unique to Mocha Tree</td>
+                  </tr>
+                  <tr>
+                    <td>White Mocha</td>
+                    <td>
+                      Rich and creamy white chocolate blended with espresso
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Painkiller</td>
+                    <td>House specialty with real cotton candy</td>
+                  </tr>
+                  <tr>
+                    <td>Dubai</td>
+                    <td>Premium seasonal specialty drink</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Red Bulls -->
+              <h5 class="menu-category">Flavored Red Bulls</h5>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Flavored Red Bull</td>
+                    <td>Your choice of flavor — made with real Red Bull</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Food -->
+              <h5 class="menu-category">Food</h5>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bagel Breakfast Sandwich</td>
+                    <td>$4.75</td>
+                  </tr>
+                  <tr>
+                    <td>Croissant Breakfast Sandwich</td>
+                    <td>$5.00</td>
+                  </tr>
+                  <tr>
+                    <td>Blazin Bagel</td>
+                    <td>$3.25</td>
+                  </tr>
+                  <tr>
+                    <td>Plain Bagel</td>
+                    <td>$2.75</td>
+                  </tr>
+                  <tr>
+                    <td>Cup of Tomato Soup</td>
+                    <td>$3.50</td>
+                  </tr>
+                  <tr>
+                    <td>Cookies</td>
+                    <td>$2.75</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Order CTAs -->
+              <div
+                class="d-flex justify-content-center align-items-center gap-3 mt-4 mb-2"
+              >
+                <a
+                  href="https://www.ubereats.com/store/the-mocha-tree-espresso/JTEpuCb_SdGKOvKM5lvE2Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-caramel w-50 text-center btn-order"
+                >
+                  <i class="fa-solid fa-motorcycle me-2"></i>Order on Uber Eats
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="section-eyebrow">Our Story</p>
+            <h2>Yakima's Home for<br />Real Espresso</h2>
+            <p>
+              The Mocha Tree Espresso has been serving Yakima for over twenty
+              seven years — making us the valley's longest running espresso bar.
+              What started as a single drive-thru window has grown into a
+              community staple, one handcrafted drink at a time.
+            </p>
+            <p>
+              We remember how you take your coffee. We know your name. That's
+              not a policy — it's just who we are.
+            </p>
+            <div class="about-features row mt-4">
+              <div class="col-4 text-center">
+                <div class="feature-number">27+</div>
+                <div class="feature-label">Years Serving Yakima</div>
+              </div>
+              <div class="col-4 text-center">
+                <div class="feature-number">
+                  <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="feature-label">Drive-Thru Available</div>
+              </div>
+              <div class="col-4 text-center">
+                <div class="feature-number">
+                  <i class="fa-solid fa-dog"></i>
+                </div>
+                <div class="feature-label">Dog Friendly Patio</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-card">
+              <h5>Why The Mocha Tree?</h5>
+              <ul class="about-list">
+                <li>Yakima's longest running espresso bar</li>
+                <li>Handcrafted drinks made to order</li>
+                <li>Breakfast bites fresh daily</li>
+                <li>Drive-thru and outdoor seating available</li>
+                <li>Dog friendly patio</li>
+                <li>Order online via Uber Eats or Grubhub</li>
+                <li>Digital loyalty punch card</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p class="section-eyebrow">What We're Known For</p>
+            <h2>Handcrafted Drinks<br />Made Your Way</h2>
+            <p class="section-sub">
+              From our signature espresso drinks to flavored Red Bulls and fresh
+              breakfast bites — there's something for everyone at The Mocha
+              Tree.
+            </p>
+          </div>
+        </div>
+
+        <!-- Signature Drink Cards -->
+        <div class="row mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="drink-card">
+              <div class="drink-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+              </div>
+              <h5>Caramallo</h5>
+              <p>
+                Rich espresso with a sweet caramel twist. A house favorite for
+                good reason.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="drink-card drink-card-featured">
+              <div class="drink-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5>Twisted Sister</h5>
+              <p>
+                Our most requested drink. Ask your barista what makes it so
+                special.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="drink-card">
+              <div class="drink-icon">
+                <i class="fa-solid fa-candy-cane"></i>
+              </div>
+              <h5>Painkiller</h5>
+              <p>
+                A house specialty made with real cotton candy. Sweet, bold,
+                unforgettable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order CTAs -->
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8 text-center">
+            <h4 class="mb-4">Ready to Order?</h4>
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 flex-wrap"
+            >
+              <a
+                href="https://www.ubereats.com/store/the-mocha-tree-espresso/JTEpuCb_SdGKOvKM5lvE2Q"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-caramel btn-order px-4"
+              >
+                <i class="fa-solid fa-motorcycle me-2"></i>Order on Uber Eats
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-dark btn-order px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#menuModal"
+              >
+                <i class="fa-solid fa-list me-2"></i>Full Menu
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loyalty -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-6">
+            <div class="loyalty-card text-center">
+              <i class="fa-solid fa-stamp fa-2x mb-3"></i>
+              <h5>Digital Punch Card</h5>
+              <p>
+                Join our loyalty program and earn rewards with every visit. Ask
+                your barista to get started.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p class="section-eyebrow">Come Find Us</p>
+            <h2>Visit The Mocha Tree</h2>
+            <p class="section-sub">
+              Drive-thru, outdoor seating, and dog friendly patio. We're easy to
+              find and even easier to love.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="contact-card text-center">
+              <i class="fa-solid fa-location-dot fa-2x mb-3"></i>
+              <h5>Location</h5>
+              <p>1018 S 11th Ave<br />Yakima, WA 98902</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="contact-card text-center">
+              <i class="fa-solid fa-phone fa-2x mb-3"></i>
+              <h5>Phone</h5>
+              <p><a href="tel:5094538733">(509) 453-8733</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="contact-card text-center">
+              <i class="fa-solid fa-clock fa-2x mb-3"></i>
+              <h5>Hours</h5>
+              <p>Monday – Friday<br />6:00 AM – 10:00 PM</p>
+              <p>Saturday – Sunday<br />6:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo Order Form -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-7">
+            <div class="demo-form-card">
+              <p class="demo-label">Demo — Direct Order Form</p>
+              <h4>Place a Direct Order</h4>
+              <p class="section-sub mb-4">
+                This is a demonstration of what a direct ordering system could
+                look like. For live orders please use Uber Eats.
+              </p>
+              <form>
+                <div class="mb-3">
+                  <label for="orderName" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="orderName"
+                    name="name"
+                    placeholder="Full name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="orderPhone" class="form-label"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="orderPhone"
+                    name="phone"
+                    placeholder="509-555-1234"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="orderDrink" class="form-label">Drink Order</label>
+                  <select class="form-control" id="orderDrink" name="drink">
+                    <option>Select a drink...</option>
+                    <option>Caramallo</option>
+                    <option>Twisted Sister</option>
+                    <option>Tutti Fruity</option>
+                    <option>White Mocha</option>
+                    <option>Painkiller</option>
+                    <option>Dubai</option>
+                    <option>Flavored Red Bull</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="orderSize" class="form-label">Size</label>
+                  <select class="form-control" id="orderSize" name="size">
+                    <option>Select a size...</option>
+                    <option>12oz</option>
+                    <option>16oz</option>
+                    <option>20oz</option>
+                    <option>32oz</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="orderNotes" class="form-label"
+                    >Special Instructions</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="orderNotes"
+                    name="notes"
+                    rows="3"
+                    placeholder="Any modifications or special requests..."
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-caramel btn-order px-5">
+                    Submit Order
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5>The Mocha Tree Espresso</h5>
+            <p>
+              Yakima's longest running espresso bar. Serving the valley for over
+              twenty seven years.
+            </p>
+            <p class="footer-legal">1018 S 11th Ave, Yakima, WA 98902</p>
+          </div>
+          <div class="col-lg-2 col-md-4 mb-4">
+            <h6>Navigation</h6>
+            <ul class="footer-list">
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <h6>Order Online</h6>
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://www.ubereats.com/store/the-mocha-tree-espresso/JTEpuCb_SdGKOvKM5lvE2Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Uber Eats
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <h6>Follow Us</h6>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/yakimasbest/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </a>
+            </div>
+            <div class="mt-3">
+              <h6>Contact</h6>
+              <ul class="footer-list">
+                <li>
+                  <i class="fa-solid fa-phone fa-sm me-2"></i>(509) 453-8733
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="col text-center">
+            <p>&copy; 2026 The Mocha Tree Espresso. All rights reserved.</p>
+            <p class="footer-disclaimer">
+              Website designed and developed by Restore Digital — a trade name
+              of Acuitas Ventures LLC.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
